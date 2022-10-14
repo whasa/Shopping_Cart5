@@ -1,10 +1,9 @@
-﻿using System;
+﻿#nullable disable
+
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata;
+using ShopCart.Models;
 
-#nullable disable
-
-namespace ShopCart.Models
+namespace ShopCart.DbContexts
 {
     public partial class CoppelMxContext : DbContext
     {
@@ -22,14 +21,14 @@ namespace ShopCart.Models
         public virtual DbSet<Pedido> Pedidos { get; set; }
         public virtual DbSet<Producto> Productos { get; set; }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            if (!optionsBuilder.IsConfigured)
-            {
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-                optionsBuilder.UseSqlServer("Server=192.168.1.54;Database=CoppelMx;user Id=testUser;password=whasaasahw;");
-            }
-        }
+        //        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        //        {
+        //            if (!optionsBuilder.IsConfigured)
+        //            {
+        //#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
+        //                optionsBuilder.UseSqlServer("Server=192.168.1.54;Database=CoppelMx;user Id=testUser;password=whasaasahw;");
+        //            }
+        //        }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

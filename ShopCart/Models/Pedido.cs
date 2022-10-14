@@ -1,7 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿#nullable disable
 
-#nullable disable
+
+using System;
+using System.Collections.Generic;
 
 namespace ShopCart.Models
 {

@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
-using ShopCart.Models;
 using System.Linq;
-
+using ShopCart.DbContexts;
+using ShopCart.Models;
 
 namespace ShopCart.Services
 {

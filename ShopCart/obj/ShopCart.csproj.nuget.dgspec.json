@@ -1,28 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/Users/ricardo/Documents/Projects/NetCore/NetCore5/Shopping_Cart5/ShopCart/ShopCart.csproj": {}
+    "C:\\Users\\whasa\\Documents\\Projects\\NetCore5\\ShopCart\\ShopCart\\ShopCart.csproj": {}
   },
   "projects": {
-    "/Users/ricardo/Documents/Projects/NetCore/NetCore5/Shopping_Cart5/ShopCart/ShopCart.csproj": {
+    "C:\\Users\\whasa\\Documents\\Projects\\NetCore5\\ShopCart\\ShopCart\\ShopCart.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ricardo/Documents/Projects/NetCore/NetCore5/Shopping_Cart5/ShopCart/ShopCart.csproj",
+        "projectUniqueName": "C:\\Users\\whasa\\Documents\\Projects\\NetCore5\\ShopCart\\ShopCart\\ShopCart.csproj",
         "projectName": "ShopCart",
-        "projectPath": "/Users/ricardo/Documents/Projects/NetCore/NetCore5/Shopping_Cart5/ShopCart/ShopCart.csproj",
-        "packagesPath": "/Users/ricardo/.nuget/packages/",
-        "outputPath": "/Users/ricardo/Documents/Projects/NetCore/NetCore5/Shopping_Cart5/ShopCart/obj/",
+        "projectPath": "C:\\Users\\whasa\\Documents\\Projects\\NetCore5\\ShopCart\\ShopCart\\ShopCart.csproj",
+        "packagesPath": "C:\\Users\\whasa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\whasa\\Documents\\Projects\\NetCore5\\ShopCart\\ShopCart\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "/Users/ricardo/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\whasa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -41,6 +40,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.17, )"
@@ -75,7 +78,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.402/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,15 +1,11 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using ShopCart.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore.SqlServer;
-using Microsoft.EntityFrameworkCore;
+using ShopCart.DbContexts;
+using ShopCart.Services;
 
 namespace ShopCart
 {
@@ -25,7 +21,8 @@ namespace ShopCart
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<CoppelMxContext>(options=>options.UseSqlServer(@"Server=192.168.1.54;Database=CoppelMx;user Id=testUser;password=whasaasahw;"));
+            services.AddScoped<IShopRepository, ShopRepository>();
+            services.AddDbContext<CoppelMxContext>(options => options.UseSqlServer(Configuration.GetConnectionString("Default")));
             services.AddControllersWithViews();
         }
 
