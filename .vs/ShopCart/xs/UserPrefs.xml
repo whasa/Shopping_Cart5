@@ -1,24 +1,41 @@
 ﻿<Properties StartupConfiguration="{EC91714A-3544-4995-B9EB-43CC30A35FEF}|Default">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.ShopCart PreferredExecutionTarget="/Applications/Firefox.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ShopCart/Startup.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="ShopCart/Profiles/DetallePedidoProfile.cs">
     <Files>
       <File FileName="ShopCart/appsettings.Development.json" Line="1" Column="1" />
-      <File FileName="ShopCart/Startup.cs" Line="34" Column="10" />
+      <File FileName="ShopCart/Startup.cs" Line="18" Column="10" />
       <File FileName="ShopCart/Program.cs" Line="1" Column="1" />
       <File FileName="ShopCart/Properties/launchSettings.json" Line="1" Column="1" />
       <File FileName="ShopCart/Services/IShopRepository.cs" Line="9" Column="9" />
       <File FileName="ShopCart/Services/ShopRepository.cs" Line="23" Column="9" />
       <File FileName="ShopCart/Models/Producto.cs" Line="21" Column="45" />
-      <File FileName="ShopCart/Models/ErrorViewModel.cs" Line="1" Column="1" />
+      <File FileName="ShopCart/appsettings.json" Line="14" Column="1" />
+      <File FileName="ShopCart/Controllers/CartController.cs" Line="1" Column="1" />
+      <File FileName="ShopCart/Controllers/HomeController.cs" Line="28" Column="39" />
+      <File FileName="ShopCart/Models/DetallePedido.cs" Line="17" Column="1" />
+      <File FileName="ShopCart/Models/Pedido.cs" Line="1" Column="1" />
+      <File FileName="ShopCart/Profiles/PedidoProfile.cs" Line="17" Column="1" />
+      <File FileName="ShopCart/DbContexts/CoppelMxContext.cs" Line="159" Column="1" />
+      <File FileName="ShopCart/Profiles/DetallePedidoProfile.cs" Line="13" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ShopCart" expanded="True">
             <Node name="ShopCart" expanded="True">
+              <Node name="DbContexts" expanded="True" />
               <Node name="Models" expanded="True" />
+              <Node name="Profiles" expanded="True" />
               <Node name="Properties" expanded="True" />
               <Node name="Services" expanded="True" />
+              <Node name="Views" expanded="True" />
+              <Node name="wwwroot" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -28,10 +45,4 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.ShopCart PreferredExecutionTarget="/Applications/Firefox.app" />
-  <MultiItemStartupConfigurations />
 </Properties>
