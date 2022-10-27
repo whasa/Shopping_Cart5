@@ -10,7 +10,5 @@ namespace ShopCart.Models
         public short FiCantArt { get; set; }
         public decimal FnCostoPdcto { get; set; }
 
-        public virtual Pedido FiNoPedidoNavigation { get; set; }
-        public virtual Producto FiProd { get; set; }
     }
 }

@@ -1,4 +1,5 @@
-﻿@model IEnumerable<Producto>
+﻿@using Microsoft.AspNetCore.Http.Extensions
+@model IEnumerable<Producto>
 @{
     ViewData["Title"] = "Home Page";
 }
@@ -19,7 +20,13 @@
                    <div>
                         @Html.DisplayText(item.FnProdPrecio.ToString())
                    </div>
-                    <a asp-controller="Home" asp-action="Buy" asp-route-id="@item.FiProdId">Buy Now</a>
+                   @* <a asp-controller="Home" asp-action="Buy" asp-route-id="@item.FiProdId">Buy Now</a>*@
+                   
+                   @Html.BeginForm("AddToCart","Home"){
+                      @* @Html.HiddenFor(item.FiProdId.ToString())*@
+                    @Html.Hidden("returnUrl",@Context.Request.GetEncodedUrl())
+                       <input   type="submit" value="+ Add to cart"/>
+                   }
                 </div>
             </div>
         </div>

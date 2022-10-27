@@ -52,17 +52,17 @@ namespace ShopCart.DbContexts
                     .HasColumnType("decimal(8, 2)")
                     .HasColumnName("fnCostoPdcto");
 
-                entity.HasOne(d => d.FiNoPedidoNavigation)
-                    .WithMany(p => p.DetallePedidos)
-                    .HasForeignKey(d => d.FiNoPedido)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK002_DETALLE_PEDIDO");
+                //entity.HasOne(d => d.FiNoPedidoNavigation)
+                //    .WithMany(p => p.DetallePedidos)
+                //    .HasForeignKey(d => d.FiNoPedido)
+                //    .OnDelete(DeleteBehavior.ClientSetNull)
+                //    .HasConstraintName("FK002_DETALLE_PEDIDO");
 
-                entity.HasOne(d => d.FiProd)
-                    .WithMany(p => p.DetallePedidos)
-                    .HasForeignKey(d => d.FiProdId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK__DETALLE_P__fiPro__480696CE");
+                //entity.HasOne(d => d.FiProd)
+                //    .WithMany(p => p.DetallePedidos)
+                //    .HasForeignKey(d => d.FiProdId)
+                //    .OnDelete(DeleteBehavior.ClientSetNull)
+                //    .HasConstraintName("FK__DETALLE_P__fiPro__480696CE");
             });
 
             modelBuilder.Entity<Inventario>(entity =>

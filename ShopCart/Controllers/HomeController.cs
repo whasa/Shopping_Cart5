@@ -20,18 +20,25 @@ namespace ShopCart.Controllers
             return View(_shopRepository.getProductos());
         }
 
-        public IActionResult Buy(string id)
-        {
-
-            return View();
-        }
-        //public IActionResult Index()
+        //public IActionResult AddToCart(string id)
         //{
-        //    var cart = SessionHelper.GetObjectFromJson<List<Producto>>(HttpContext.Session, "cart");
-        //    //ViewBag.cart = cart;
-        //    //ViewBag.total = cart.Sum(item => item.FnProdPrecio);
-        //    return View();
+
+        //    return new EmptyResult();
         //}
+
+        //public RedirectToActionResult AddToCart(string id, string returnUrl)
+        //{
+        //    string emp = string.Empty;
+        //    return RedirectToAction("Index", new { returnUrl });
+        //}
+
+        public ActionResult AddToCart()
+        {
+            //var cart = sessionhelper.getobjectfromjson<list<producto>>(httpcontext.session, "cart");
+            //viewbag.cart = cart;
+            //viewbag.total = cart.sum(item => item.fnprodprecio);
+            return new EmptyResult();
+        }
         //[ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         //public IActionResult Error()
         //{

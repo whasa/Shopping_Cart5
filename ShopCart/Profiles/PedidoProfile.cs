@@ -1,5 +1,4 @@
-﻿using System;
-using AutoMapper;
+﻿using AutoMapper;
 using ShopCart.Models;
 
 namespace ShopCart.Profiles
@@ -9,7 +8,7 @@ namespace ShopCart.Profiles
         public PedidoProfile()
         {
             CreateMap<Pedido, PedidoForCreationDTO>();
-                
+
         }
     }
 }
