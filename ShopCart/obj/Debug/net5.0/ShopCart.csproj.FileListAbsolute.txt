@@ -772,3 +772,4 @@ C:\Users\whasa\Documents\Projects\NetCore5\ShopCart\ShopCart\obj\Debug\net5.0\re
 C:\Users\whasa\Documents\Projects\NetCore5\ShopCart\ShopCart\obj\Debug\net5.0\ShopCart.pdb
 C:\Users\whasa\Documents\Projects\NetCore5\ShopCart\ShopCart\obj\Debug\net5.0\ShopCart.genruntimeconfig.cache
 C:\Users\whasa\Documents\Projects\NetCore5\ShopCart\ShopCart\obj\Debug\net5.0\ref\ShopCart.dll
+C:\Users\whasa\Documents\Projects\NetCore5\ShopCart\ShopCart\bin\Debug\net5.0\libman.json

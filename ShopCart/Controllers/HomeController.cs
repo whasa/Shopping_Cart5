@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using ShopCart.Models;
 using ShopCart.Services;
 
 namespace ShopCart.Controllers
@@ -32,7 +33,7 @@ namespace ShopCart.Controllers
         //    return RedirectToAction("Index", new { returnUrl });
         //}
 
-        public ActionResult AddToCart()
+        public ActionResult AddToCart(ProductoRequestDTO item)
         {
             //var cart = sessionhelper.getobjectfromjson<list<producto>>(httpcontext.session, "cart");
             //viewbag.cart = cart;

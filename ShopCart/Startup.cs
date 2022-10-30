@@ -1,4 +1,3 @@
-using System;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -7,6 +6,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using ShopCart.DbContexts;
 using ShopCart.Services;
+using System;
 
 namespace ShopCart
 {
@@ -25,7 +25,7 @@ namespace ShopCart
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
             services.AddScoped<IShopRepository, ShopRepository>();
             services.AddDbContext<CoppelMxContext>(options => options.UseSqlServer(Configuration.GetConnectionString("Default")));
-            services.AddControllersWithViews();
+            services.AddControllersWithViews().AddRazorRuntimeCompilation();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

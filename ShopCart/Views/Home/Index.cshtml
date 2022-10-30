@@ -10,29 +10,57 @@
         <div class="col-md-4 col-sm-6">
             <div class="card">
 
-                <img class="card-img-top" src="..." alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">@Html.DisplayText(item.FiProdId.ToString())</h5>
-                    <p class="card-text">@Html.DisplayText(item.FcProdDesc)</p>
+@*                <img class="card-img-top" src="..." alt="Card image cap">
+*@                
+                    <div class="card-body">
+                    <h5 class="card-title">@Html.DisplayName(item.FiProdId.ToString())</h5>
+                    <p class="card-text">@Html.DisplayName(item.FcProdDesc)</p>
                 </div>
                 <div class="card-footer">
                    @* <small class="text-muted">Last updated 3 mins ago</small>*@
-                   <div>
+@*                   <div>
                         @Html.DisplayText(item.FnProdPrecio.ToString())
-                   </div>
+                   </div>*@
                    @* <a asp-controller="Home" asp-action="Buy" asp-route-id="@item.FiProdId">Buy Now</a>*@
                    
-                   @Html.BeginForm("AddToCart","Home"){
-                      @* @Html.HiddenFor(item.FiProdId.ToString())*@
+@*                   @Html.BeginForm("AddToCart","Home"){
                     @Html.Hidden("returnUrl",@Context.Request.GetEncodedUrl())
                        <input   type="submit" value="+ Add to cart"/>
-                   }
+                   }*@
+                    <button class="btn btn-outline-danger btnAddShopCart"  id="btnAddShopCart"><i class="fa fa-search"></i> Add Cart</button>
+@*                    @Html.DisplayName(item.FnProdPrecio.ToString())
+*@
                 </div>
             </div>
         </div>
     }
 
-
-
-
 </div>
+@section Scripts {
+    <script>
+
+        $(".btnAddShopCart").click(function () {
+            var data = {
+                ProductoId: 1111
+            };
+
+            $.ajax({
+                type: 'GET',
+                url: "@Url.Action("AddToCart")",
+                data: data,
+                datatype: 'application/html',
+                success: function (respuesta, status) {
+                    console.log("regreso ");
+
+                },
+
+                error: function (e) {
+                    console.log("regreso ");
+              
+
+                }
+        })
+        })
+
+    </script>
+}
